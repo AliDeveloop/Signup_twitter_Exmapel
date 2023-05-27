@@ -1,0 +1,99 @@
+@media screen and (min-width: 900px) {
+    form {
+    min-height: 700px;
+    min-width: 600px;
+    max-width: 1000px;
+    }
+    }
+    form {
+        color: white;
+        text-align: start;
+        /* margin-left: 50%;
+        margin-right: 50%; */
+      background-color: #192734;
+      border-radius: 15px;
+      padding: 20px;
+      width: 350px;
+    }
+    
+    label {
+      color: white;
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      text-align: left;
+      width: 100%;
+    }
+    
+    input[type='email'],
+    input[type='date'],
+    input[type='text'],
+    input[type='password'],
+    input[type='file'],
+    textarea,
+    select {
+      background-color: #253341;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: white;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+    
+    input[type='email']::placeholder,
+    input[type='date']::placeholder,
+    input[type='text']::placeholder,
+    input[type='password']::placeholder,
+    textarea::placeholder {
+      color: #8899A6;
+    }
+    
+    input[type='radio'] {
+      margin-right: 5px;
+    }
+    
+    select option:first-child {
+      color: #8899A6;
+    }
+    
+    .ok {
+        text-align: center;
+      background-color: #1DA1F2;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      transition: background-color 0.3s ease-in-out;
+      width: 100%;
+    }
+    
+    .ok:hover {
+      background-color: #0C87C5;
+    }
+    .em {
+      color: #FF0000;
+      margin-top: 10px;
+      text-align: left;
+    
+    }
+    .error{
+        color: #FF0000;
+      margin-top: 10px;
+      text-align: left;
+    }
+    .container {
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h2{
+        color: white;
+    }

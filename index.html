@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exampel signup</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <form name="myForm">
+            <label for="email">ایمیل:</label>
+            <input type="email" id="email" name="email"><br>
+            <div class="em" id="error-messages1"></div>
+            <label for="dob">تاریخ تولد:</label>
+        <input type="date" id="dob" name="dob"><br>
+        <div class="em" id="error-messages2"></div>
+        <label for="national-id">شماره ملی:</label>
+        <input type="text" id="national-id" name="national-id" minlength="10" maxlength="10"><br>
+        <div class="em" id="error-messages3"></div>
+        <label for="password">رمز عبور:</label>
+        <input type="password" id="password" name="password"><br>
+        <div class="em" id="error-messages4"></div>
+        <label for="gender">جنسیت:</label>
+        <input type="radio" id="male" name="gender" value="male">مرد
+        <input type="radio" id="female" name="gender" value="female">زن<br>
+        <div class="em" id="error-messages5"></div>
+        <label for="province">استان:</label>
+        <select id="province" name="province">
+            <option value="">انتخاب کنید</option>
+            <option value="tehran">تهران</option>
+            <option value="isfahan">اصفهان</option>
+            <option value="hamedan">همدان</option>
+            <option value="shiraz">شیراز</option>
+        </select><br>
+        <div class="em" id="error-messages6"></div>
+        <label for="address">آدرس:</label>
+        <textarea id="address" name="address"></textarea><br>
+        <div class="em" id="error-messages7"></div>
+        <label for="marital-status">وضعیت تاهل:</label>
+        <input type="radio" id="single" name="marital-status" value="single">مجرد
+        <input type="radio" id="married" name="marital-status" value="married">متاهل<br>
+        <div class="em" id="error-messages8"></div>
+        <label for="income">درآمد ماهیانه:</label>
+        <select id="income" name="income">
+            <option value="">انتخاب کنید</option>
+            <option value="0-2">0 تا 2 میلیون تومان</option>
+            <option value="2-10">2 تا 10 میلیون تومان</option>
+            <option value="10+">بیش از 10 میلیون تومان</option>
+        </select><br>
+        <div class="em" id="error-messages9"></div>
+        <label for="profile-pic">عکس :</label>
+        <input type="file" id="profile-pic" name="profile-pic" onchange="showProfilePic()"><br>
+        <img id="profile-pic-preview" src="#" alt="عکس " style="display:none;max-width:200px;max-height:200px;">
+        <div class="em" id="error-messages10"></div>
+        <br>
+        <div  class="ok" onclick="f()">Submit</div>
+        
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
